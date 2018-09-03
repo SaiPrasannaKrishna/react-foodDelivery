@@ -1,0 +1,98 @@
+.typo{
+    flex-grow: 1;
+}
+
+@media (max-width:680px){
+    .typo{
+    font-size:12px!important;
+    flex-grow:0.25;
+    }
+}
+
+.inputPlaceholder::placeholder{
+opacity: 1;
+color:white;
+}   
+
+.cartCount{
+    background: white;
+    color: #795548;
+    width: 20px;
+    border-radius: 50%;
+    height: 20px;
+    margin-left: 4px;
+    font-size: 14px;
+}
+
+
+.searchBox{
+    background: rgba(255, 255, 255, 0.15);
+    width: 200px;
+    height:35px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:12px;
+    }
+
+    .headerMain{
+        background-color:#795548!important;
+    }
+
+    .menu>div{
+        top:200px;
+
+    }
+
+    .searchBoxExtended{
+        background: rgba(255, 255, 255, 0.15);
+        width: 300px;
+        height:35px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        border-radius:12px;
+        }
+
+    .inputPlaceholder{
+        background:none;
+        outline:none;
+        border:0;
+        color:white
+    }
+
+    .btn{
+        background: #795548!important;
+        color: white!important;
+        padding: 30px!important;
+    }
+
+    .signin{
+        color: white!important;
+        font-size: 17px!important;
+        margin-right: 20px!important;
+    }
+
+    .searchIcon{
+        flex-grow: 1;
+    }
+    .searchIconExtended{
+        flex-grow:0.25;
+    }
+    .menusItem{
+        border:0!important;
+    }
+    .menuItem{
+        height:100%!important;
+        padding: 0!important;
+        outline: none;
+    }
+    .menuItem:hover{
+        background: white;
+    }
+    @media (max-width:480px){
+        .signInContent{
+            display: none;
+        }
+    }
+    

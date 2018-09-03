@@ -1,0 +1,30 @@
+.parentAddress{
+        position: fixed;
+        top: 0;
+        height: 100%;
+        background: #fff;
+        transition: -webkit-transform .3s ease-out;
+        transition: transform .3s ease-out;
+        transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+        z-index: 200;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        left: auto;
+        right: 0px;
+        transform: translate(0%, 0px);
+        padding:9.5%;
+        width: 33%;
+}
+
+.parentAddress input[type="text"]{
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+@media (max-width:680px){
+    .parentAddress{
+        padding: 10%;
+        width:80%;
+    }
+}

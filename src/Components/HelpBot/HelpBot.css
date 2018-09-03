@@ -1,0 +1,10 @@
+
+
+.chatBot{
+    position: fixed;
+    z-index: 500;
+    transform: translateZ(0);
+    left: auto;
+    right: 0px;
+    padding: 0;
+}

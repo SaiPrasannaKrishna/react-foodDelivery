@@ -1,0 +1,55 @@
+
+.showLoadingAnimation {
+  animation: react-placeholder-pulse 1.0s infinite; }
+
+@keyframes react-placeholder-pulse {
+  0% {
+    opacity: .3; }
+  50% {
+    opacity: .5; }
+  100% {
+    opacity: .9; } }
+
+
+.item{
+    overflow: hidden;
+    border-radius: 2px 2px 0 0;
+    max-height: 125px;
+    transition: transform .7s;
+}
+
+.item:hover{
+    transform: scale(1.15);
+}
+
+.flexItem:hover{
+    box-shadow: 4px 4px 3px 2px rgba(70, 39, 39, 0.2), 3px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 4px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+.flexItem{
+    transition: ease-in 2000000ms;
+}
+
+.mostOrdered{
+    font-family: serif;
+    left: -8px;
+    top: 0;
+    background-color: #ec4d41;
+    color: #fff!important;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 5px 9px 4px;
+    max-width: 50%;
+    text-transform: uppercase;
+    border-color: #8a584b;
+}
+.isBack
+{
+    padding: 0;
+    margin:0;
+    float:right;
+    cursor: pointer;
+    color:#795548;
+
+}
+

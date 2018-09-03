@@ -1,0 +1,27 @@
+.dot{
+    position: fixed;
+    z-index:200;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+}
+.loader{
+    display:flex;
+    justify-content: center;
+}
+
+@-webkit-keyframes mymove {
+    0%   {transform:scale(0.15)}
+    25%  {transform:scale(0.25)}
+    50%  {transform:scale(0.35)}
+    75%  {transform:scale(0.5)}
+    100% {transform:scale(0.25)}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0%   {transform:scale(0.15)}
+    25%  {transform:scale(0.25)}
+    50%  {transform:scale(0.35)}
+    75%  {transform:scale(0.5)}
+    100% {transform:scale(0.25)}
+}

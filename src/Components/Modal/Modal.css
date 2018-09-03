@@ -1,0 +1,50 @@
+.parentModal{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    background: #fff;
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+    z-index: 500;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    left: auto;
+    right: 0px;
+    transform: translate(0%, 0px);
+    padding:9.5%;
+}
+
+
+.parentModal .closeIcon{
+    float: left;
+    right: 0px;
+    cursor: pointer;
+}
+
+.parentModal .summary{
+    font-weight: bold;
+    font-size:18px;
+}
+.parentModal .table{
+    display:block;
+    max-height: 50%;
+    overflow-y: scroll;
+}
+@media (max-width:680px){
+    .parentModal{
+        width: 100%;
+        padding:0;
+    }
+
+    .parentModal .table{
+        max-height: 40%;
+    }
+    .parentModal .closeIcon{
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    .parentModal .bigDevices{
+        display: none;
+    }
+}

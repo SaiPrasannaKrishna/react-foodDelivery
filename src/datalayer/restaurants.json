@@ -1,0 +1,17 @@
+[
+    {"name":"Thanos Restaurant","item":"Pizza","price":275},
+    {"name":"Thors Bar","item":"Burger","price":175},
+    {"name":"SpiderMan FastFood","item":"Fries","price":260},
+    {"name":"AntMan Place","item":"Deserts","price":145},
+    {"name":"Galaxy Island","item":"Italian","price":200},
+    {"name":"Infinity Icecreams","item":"Icecreams","price":30},
+    {"name":"Strange Juices ","item":"Juice","price":60},
+    {"name":"Thanos Restaurant","item":"Dosa","price":110},
+    {"name":"Thanos Restaurant","item":"Roti","price":35},
+    {"name":"Thanos Restaurant","item":"Frankie","price":75},
+    {"name":"Thanos Restaurant","item":"Bread","price":25},
+    {"name":"Thanos Restaurant","item":"doughnut","price":175},
+    {"name":"Thanos Restaurant","item":"naan","price":75},
+    {"name":"Thanos Restaurant","item":"cakes","price":375},
+    {"name":"Thanos Restaurant","item":"fruits","price":150}
+]
