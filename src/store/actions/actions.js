@@ -98,7 +98,7 @@ export const fetchFoodItemsFailed = ()=>{
 
 export const getFoodItems = () =>{
     return dispatch =>{
-        const url="https://api.myjson.com/bins/1gawto";
+        const url="https://api.jsonbin.io/b/5ec694b118c8475bf16da1e3";
         axios.get(url)
 			.then(response => {
                     dispatch(setFoodItems(response.data))
@@ -120,7 +120,7 @@ export const setRestaurants = (restaurants)=>{
 
 export const getRestaurants = ()=>{
     return dispatch=>{
-        const url="https://api.myjson.com/bins/14zobw";
+        const url="https://api.jsonbin.io/b/5ec69449e91d1e45d10e96bc";
         axios.get(url)
 			.then(response => {
                     dispatch(setRestaurants(response.data))

@@ -45,7 +45,7 @@ class AutomateOrder extends Component{
         }
 
     getRestaurants = (foodName,foodQuantity)=>{
-        const url="https://api.myjson.com/bins/14zobw";
+        const url="https://api.jsonbin.io/b/5ec69449e91d1e45d10e96bc";
         axios.get(url).then((response)=>{
             this.setState({
                 items:response.data

@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './SideDrawer.css';
+import './SideDrawer.css';
 import Backdrop from '../Backdrop/Backdrop';
 import Auxillay from '../../hoc/Auxillay';
 import Button from '@material-ui/core/Button';
@@ -148,10 +148,10 @@ class SideDrawer extends React.Component{
         return(
         <Auxillay>
             <Backdrop/>
-                <div className={classes.parentDiv}>
+                <div className="parentDiv">
                 <FontAwesomeIcon icon="times" style={styles.close} onClick={this.props.closeSignModal}/>
                 <h2>Login</h2>
-                    <div className={classes.loginBlock} >
+                    <div className="loginBlock">
                     {loginArray.length>0? loginForm:null}
                 </div><br/>
                 </div> 

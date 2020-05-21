@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import ChatBot from 'react-simple-chatbot';
-import classes from './HelpBot.css';
+import './HelpBot.css';
 import Backdrop from '../../Components/Backdrop/Backdrop';
 import Auxillay from '../../hoc/Auxillay';
 import { ThemeProvider } from 'styled-components';
@@ -24,7 +24,7 @@ class HelpBot extends Component{
         return(
             <Auxillay>
                 <Backdrop clicked={this.props.closeModal}/>
-                <div className={classes.chatBot}>
+                <div className="chatBot">
                 <ThemeProvider theme={theme}>
                 <ChatBot 
                    steps={botData} sample="asfasf"

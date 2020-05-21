@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import Backdrop from '../Backdrop/Backdrop';
 import Auxillay from '../../hoc/Auxillay';
-import classes from './AddressForm.css';
+import  './AddressForm.css';
 import Button from '@material-ui/core/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -177,7 +177,7 @@ class AddressForm extends Component
             <Auxillay>
             <Backdrop clicked={this.props.modalClose}/>
             <br/><br/>
-            <div className={classes.parentAddress}>
+            <div className="parentAddress">
             <h2>Address</h2>
             <FontAwesomeIcon icon="times" style={styles.close} onClick={this.props.modalClose}/>
             <br/>
