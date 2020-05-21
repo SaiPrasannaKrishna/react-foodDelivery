@@ -3,7 +3,7 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import classes from './FoodList.css';
+import './FoodList.css';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -128,23 +128,23 @@ render(){
           style={styles.itemWidth}>
         <Card 
             style={styles} 
-            className={classes.flexItem}>
+            className="flexItem">
             <CardContent >
             {this.state.isModalOpened?
             <FontAwesomeIcon 
-                className={classes.isBack} 
+                className="isBack"
                 icon="backward"
                 onClick={this.back}/>:''} 
             {this.props.isMostOrdered? 
             <ReactPlaceholder 
                 type='textRow' 
-                className={classes.mostOrdered +' '+ classes.showLoadingAnimation}
+                className="mostOrdered showLoadingAnimation"
                 firstLaunchOnly={true} 
                 ready={this.state.isFoodLoading} 
                 color='#E0E0E0'>
             <Typography 
                 component="p" 
-                className={classes.mostOrdered}> Popular
+                className="mostOrdered"> Popular
           </Typography></ReactPlaceholder>:
           <div 
             style={styles.itemNotMostOrdered}></div>}<br/>
@@ -152,21 +152,21 @@ render(){
           <ReactPlaceholder 
                 type='textRow' 
                 ready={this.state.isFoodLoading}
-                className ={classes.showLoadingAnimation}
+                className ="showLoadingAnimation"
                 style={styles.placeholderImage}
                 firstLaunchOnly={true}
                 color='#E0E0E0'>
           <img 
                 src={this.props.image} 
                 alt="product" 
-                className ={classes.item}/></ReactPlaceholder>}
+                className ="item"/></ReactPlaceholder>}
           <Typography 
                 color="textSecondary">
           </Typography>
           <Typography 
                 variant="headline" 
                 component="h2" 
-                className={classes.itemName}>
+                className="itemName">
             {this.props.name}
           </Typography>
          <Typography 
@@ -178,7 +178,7 @@ render(){
           {this.state.isModalOpened? '' :
         <ReactPlaceholder 
             type='textRow' 
-            className ={classes.showLoadingAnimation}
+            className ="showLoadingAnimation"
             ready={this.state.isFoodLoading}
             firstLaunchOnly={true}
             color='#E0E0E0'>

@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import FoodList from '../FoodList/FoodList';
-import classes from './FoodLists.css';
+import './FoodLists.css';
 import PropTypes from 'prop-types';
 import Auxillary from '../../hoc/Auxillay';
 import Loader from '../../Components/Loader/Loader';
@@ -97,7 +97,7 @@ class FoodLists extends Component{
             <Auxillary>
              {this.props.lists.length <=0 ?<Loader/>:
              <div 
-                className={classes.flexContainer}>
+                className="flexContainer">
                 {filteredList.map((item,index) => {
                     return <FoodList 
                             image = {item.imgsrc} 

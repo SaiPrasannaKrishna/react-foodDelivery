@@ -3,7 +3,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import classes from './Header.css';
+import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -11,6 +11,7 @@ import Fade from '@material-ui/core/Fade';
 import Modal from '../../Components/Modal/Modal';
 import HelpBot from '../../Components/HelpBot/HelpBot';
 import {connect} from 'react-redux';
+import './Header.css';
 import * as actionCreators from '../../store/actions/actions';
 import AddressForm from '../../Components/AddressForm/AddressForm';
 
@@ -20,32 +21,32 @@ class Header extends Component {
     {
         const { anchorEl } = this.props;
         return <div>
-       <AppBar position="static" className={classes.headerMain}>
+       <AppBar position="static" className="headerMain">
         <Toolbar>
-             <Typography variant="title" color="inherit" className={classes.typo}>
+             <Typography variant="title" color="inherit" className="typo">
              </Typography>
              <div onClick={this.props.siginHandler}>
-                <Typography variant="title" gutterBottom className={classes.signin}>
+                <Typography variant="title" gutterBottom className="signin">
                 <FontAwesomeIcon icon="user" />
                 </Typography>
              </div>
              <div  onClick={this.props.invokeBot}>
-                <Typography variant="title" gutterBottom className={classes.signin}>
+                <Typography variant="title" gutterBottom className="signin">
                 <FontAwesomeIcon icon="robot" />
                 </Typography>
              </div>
              <span 
                    onMouseOver={()=>this.props.onHover(true)} 
                    onMouseLeave={() =>this.props.onHover(false)}
-                   className={(this.props.isHovered ?classes.searchBoxExtended: classes.searchBox)}>
+                   className={(this.props.isHovered ?"searchBoxExtended": "searchBox")}>
                 <FontAwesomeIcon 
                     icon="search"  
-                    className={(this.props.isHovered?classes.searchIconExtended: classes.searchIcon)}/>
+                    className={(this.props.isHovered?"searchIconExtended": "searchIcon")}/>
                 <input 
                     type="text" 
                     placeholder="search.."  
                     onChange  = {(event)=>{this.props.filterFood(event)}}
-                    className = {classes.inputPlaceholder}/>
+                    className = "inputPlaceholder"/>
              </span>
                 <Button 
                     color="inherit" 
@@ -53,7 +54,7 @@ class Header extends Component {
                 <FontAwesomeIcon 
                     icon="shopping-cart"/>
                 <span 
-                    className={classes.cartCount}>
+                    className="cartCount">
                     {this.props.cartCount}
                 </span>
                 </Button>
@@ -63,17 +64,17 @@ class Header extends Component {
                 open={Boolean(anchorEl)}
                 onClose={this.props.handleClose}
                 TransitionComponent={Fade}
-                className={classes.menu}>
+                className="menu">
                 {this.props.cartCount > 0 ?
           <div>
             <MenuItem 
                 onClick={this.props.handleClose} 
-                className={classes.menusItem}>
+                className="menusItem">
             Total Items : {this.props.cartCount}
             </MenuItem>
             <MenuItem 
                 onClick={this.props.handleClose} 
-                className={classes.menusItem}>
+                className="menusItem">
                 Total Price : {this.props.cartSum}/-
             </MenuItem>
              <br/>
@@ -81,7 +82,7 @@ class Header extends Component {
                 onClick={this.props.checkOut}> 
                 <Button 
                 color="primary"
-                className={classes.btn}>
+                className="btn">
                 Order
                 </Button>
             </MenuItem>
@@ -89,7 +90,7 @@ class Header extends Component {
             <MenuItem 
                 onClick={this.props.handleClose} 
                 onMouseLeave={this.props.handleClose} 
-                className={classes.menuItem}>
+                className="menuItem">
             <img 
                 src="https://cdn.dribbble.com/users/844846/screenshots/2981974/empty_cart_800x600_dribbble.png"
                 width="250px" 

@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Modal.css';
+import './Modal.css';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -23,14 +23,14 @@ const styles={
 const modal =(props)=>
 <Auxillay>
     <Backdrop clicked={props.modalClose}/>
-    <div className={classes.parentModal}>
-    <p  className={classes.summary}> Summary</p>
-    <FontAwesomeIcon icon="times" className={classes.closeIcon} onClick={props.modalClose}/>
-     <Table className={classes.table}>
+    <div className="parentModal">
+    <p  className="summary"> Summary</p>
+    <FontAwesomeIcon icon="times" className="closeIcon" onClick={props.modalClose}/>
+     <Table className="table">
         <TableHead>
           <TableRow>
               <TableCell></TableCell>
-            <TableCell className={classes.bigDevices}>Item</TableCell>
+            <TableCell className="bigDevices">Item</TableCell>
             <TableCell numeric>Quantity</TableCell>
             <TableCell numeric>Price</TableCell>
           </TableRow>
@@ -40,7 +40,7 @@ const modal =(props)=>
                 return(
                     <TableRow key={row.id}>
                     <TableCell><img src={row.imgsrc} style={styles.imgStyle} alt={row.name}/></TableCell>
-                    <TableCell component="th" scope="row" className={classes.bigDevices}>
+                    <TableCell component="th" scope="row" className="bigDevices">
                       {row.name}
                     </TableCell>
                     <TableCell numeric>{row.quantity}</TableCell>
@@ -50,7 +50,7 @@ const modal =(props)=>
             })}
             <TableRow>
                 <TableCell></TableCell>
-            <TableCell component="th" scope="row" className={classes.bigDevices}><b>Total</b></TableCell>
+            <TableCell component="th" scope="row" className="bigDevices"><b>Total</b></TableCell>
             <TableCell numeric><b>{props.totalItems}</b></TableCell>
             <TableCell numeric><b>{props.totalPrice}/-</b></TableCell>
         </TableRow>
