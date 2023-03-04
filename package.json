@@ -15,7 +15,7 @@
     "react-placeholder": "^4.0.1",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "0.9.5",
+    "react-scripts": "5.0.1",
     "react-simple-chatbot": "^0.6.1",
     "react-transition-group": "^4.4.1",
     "redux": "^4.0.5",
